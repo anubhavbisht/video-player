@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+
+:root {
+  --backgroundColor: #ccfbf1;
+  --backgroundColor2: #fbcfe8;
+  --fontColor: #2e1065;
+  --playColor: #28a745;
+  --stopColor: #dc3545;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: larger;
+  background-color: var(--backgroundColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.video-screen {
+  cursor: pointer;
+  width: 50vw;
+  height: 75%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: var(--backgroundColor2);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: var(--backgroundColor2);
+  color: var(--fontColor);
+  width: 50vw;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 4px;
+}
+
+.controls .btn {
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+}
+
+.controls .fa-play {
+  color: var(--playColor);
+}
+
+.controls .fa-pause {
+  color: var(--playColor);
+}
+
+.controls .fa-stop {
+  color: var(--stopColor);
+}
+
+.controls .timestamp {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.btn:focus {
+  outline: 0;
+}
